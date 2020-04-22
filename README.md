@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [ x] Create a forked copy of this project.
+- [ ]x Add your _Team Lead_ as collaborator on Github.
+- [ x] Clone your forked version of the Repository.
+- [x ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [ x] Implement the project on this Branch, committing changes regularly.
+- [x ] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [ x] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [  x ] Please don't merge your own pull request.
+- [ x] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [ x] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -38,13 +38,23 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [ x] Explain the difference between `Relational Databases` and `SQL`.
 
-- [ ] Why do tables need a `primary key`?
+SQL- Structured Query Langauage, standard language to manage databases and interact with them. Relational Databases - are information setup in rows and columns.
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+SQL uses the relational Databases to display the information.
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+- [ x] Why do tables need a `primary key`?
+
+Primary key - a unique identifier, used to identify each entry of said table.
+
+- [ x] What is the name given to a table column that references the primary key on another table.
+
+Foreign Key
+
+- [ x] What do we need in order to have a _many to many_ relationship between two tables.
+
+Join - combines query data from multiple tables.
 
 ## Minimum Viable Product
 
@@ -53,22 +63,22 @@ Take the steps necessary to complete the project from scratch. Start by initiali
 Complete the following tasks:
 
 - [ ] Design the data model and use _knex migrations_ to create the database and tables needed to satisfy the following business rules:
-  - [ ] a `project` can have multiple `tasks`.
-  - [ ] a `task` belongs to only one `project`.
-  - [ ] a `project` can use multiple `resources`. Example of `resources` are: computer, conference room, microphone, delivery van.
-  - [ ] the same `resource` can be used in multiple `projects`.
-  - [ ] when adding `projects` the client must provide a name, the description is optional.
-  - [ ] when adding `resources` the client must provide a name, the description is optional.
-  - [ ] when adding a `task` the client must provide a description, the notes are optional.
-  - [ ] when adding a `task` the client must provide the `id` of an existing project.
-  - [ ] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
-  - [ ] adding projects.
-  - [ ] retrieving a list of projects.
-  - [ ] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+  - [x ] a `project` can have multiple `tasks`.
+  - [ x] a `task` belongs to only one `project`.
+  - [x ] a `project` can use multiple `resources`. Example of `resources` are: computer, conference room, microphone, delivery van.
+  - [x ] the same `resource` can be used in multiple `projects`.
+  - [x ] when adding `projects` the client must provide a name, the description is optional.
+  - x[ ] when adding `resources` the client must provide a name, the description is optional.
+  - [x ] when adding a `task` the client must provide a description, the notes are optional.
+  - [x ] when adding a `task` the client must provide the `id` of an existing project.
+  - [x ] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
+- [ x] Build an API with endpoints for:
+  - [ x] adding resources.
+  - [ x] retrieving a list of resources.
+  - [x ] adding projects.
+  - [x ] retrieving a list of projects.
+  - [x ] adding tasks.
+  - [x ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 
 ### Entities
 
